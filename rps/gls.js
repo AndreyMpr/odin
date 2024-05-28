@@ -28,3 +28,11 @@ function getHumanChoice(){
 }
 
 setTimeout(() => {getHumanChoice()}, 1500);
+
+// convert user's input into one of three variables
+
+// create computer score and human score variables and increment it with each round
+
+// wrap it into a round logic
+
+// wrap everything into a game logic
