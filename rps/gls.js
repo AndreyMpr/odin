@@ -25,14 +25,15 @@ console.log(`Computer chose ${cres}!`);
 
 function getHumanChoice(){
     let human = prompt(`Chose something, you know that computer has chosen ${cres}, so it has to be en easy choice.`);
-    if (human.toLowerCase == "rock") {
+    if (human.toLowerCase() == "rock") {
         console.log("So you are going with rock");
-    } else if (human.toLowerCase == "paper") {
+    } else if (human.toLowerCase() == "paper") {
         console.log("So you are goind with paper");
-    } else if (human.toLowerCase == "scissors") {
+    } else if (human.toLowerCase() == "scissors") {
         console.log("So you are ging with scissors");
     } else {
         console.log('Please play along and type in one of the following: "Rock" or "Paper" or "Scissors"');
+        setTimeout(() => {getHumanChoice()}, 2000);
     }
 }
 
