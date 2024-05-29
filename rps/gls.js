@@ -23,6 +23,8 @@ console.log(`Computer chose ${cres}!`);
 
 //Human choice
 
+let human;
+
 function getHumanChoice(){
     let human = prompt(`Chose something, you know that computer has chosen ${cres}, so it has to be en easy choice.`);
     if (human.toLowerCase() == "rock") {
@@ -37,9 +39,32 @@ function getHumanChoice(){
     }
 }
 
+let humanChoice;
+
+human = humanChoice;
+
 setTimeout(() => {getHumanChoice()}, 1500);
 
-// convert user's input into one of three variables
+//Score
+
+let humanScore = 0;
+let computerScore = 0;
+
+/*function playRound(humanChoice.toLowerCase(), computerChoice) {
+    if (cres == "scissors") && (human == "paper") {
+        console.log("You lose");
+    } else if (cres == "scissors") &&  (human == "rock") {
+        console.log("You win");
+    } else if (cres == "paper") &&  (human == "scissors") {
+        console.log("You lose");
+    } else if (cres == "paper") &&  (human == "rock") {
+        console.log("You win");
+    } else if (cres == "rock") &&  (human == "paper") {
+        console.log("You lose");
+    } else if (cres == "rock") &&  (human == "scissors") {
+        console.log("You win");
+    }
+}*/
 
 // create computer score and human score variables and increment it with each round
 
