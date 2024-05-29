@@ -19,15 +19,17 @@ else {
     cres = "paper";
 }
 
-console.log(`Compute chose ${cres}!`);
+console.log(`Computer chose ${cres}!`);
 
 //Human choice
 
 function getHumanChoice(){
-    //let human = prompt(`Chose something, you know that computer has chosen ${cres}, so it has to be en easy choice.`);
-    //if (getHumanChoice.toLowerCase = "rock");
-    //    console.log(`So you are going with ${getHumanChoice()}`);
-    //else (console.log("I made an error"));
+    let human = prompt(`Chose something, you know that computer has chosen ${cres}, so it has to be en easy choice.`);
+    if (human.toLowerCase == "rock") {
+        console.log("So you are going with rock");
+    } else {
+        console.log("I made an error");
+    }
 }
 
 setTimeout(() => {getHumanChoice()}, 1500);
