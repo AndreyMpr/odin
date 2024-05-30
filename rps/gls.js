@@ -40,9 +40,7 @@ function getHumanChoice(){
 }
 
 let computerChoice = cres;
-let humanChoice;
-
-human = humanChoice;
+let humanChoice = human;
 
 setTimeout(() => {getHumanChoice()}, 1500);
 
@@ -64,13 +62,14 @@ function playRound(humanChoice, computerChoice) {
         console.log("You lose"), computerScore + 1;
     } else if ((cres == "rock") &&  (human == "scissors")) {
         console.log("You win", humanScore + 1);
-    }
+    } else console.log("That's a draw!"), computerScore + 1, humanScore + 1;
 }
 
 console.log(humanScore);
 console.log(computerScore);
 
 
+playRound(human, cres);
 
 //const humanSelection = getHumanChoice();
 //const computerSelection = getComputerChoice();
