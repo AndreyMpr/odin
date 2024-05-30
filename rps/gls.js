@@ -39,6 +39,7 @@ function getHumanChoice(){
     }
 }
 
+let computerChoice = cres;
 let humanChoice;
 
 human = humanChoice;
@@ -50,7 +51,28 @@ setTimeout(() => {getHumanChoice()}, 1500);
 let humanScore = 0;
 let computerScore = 0;
 
-/*function playRound(humanChoice.toLowerCase(), computerChoice) {
+function playRound(humanChoice, computerChoice) {
+    if ((cres == "scissors") && (human == "paper")) {
+        console.log("You lose");
+    } else if ((cres == "scissors") &&  (human == "rock")) {
+        console.log("You win");
+    } else if ((cres == "paper") &&  (human == "scissors")) {
+        console.log("You lose");
+    } else if ((cres == "paper") &&  (human == "rock")) {
+        console.log("You win");
+    } else if ((cres == "rock") &&  (human == "paper")) {
+        console.log("You lose");
+    } else if ((cres == "rock") &&  (human == "scissors")) {
+        console.log("You win");
+    }
+}
+
+//const humanSelection = getHumanChoice();
+//const computerSelection = getComputerChoice();
+
+//playRound(humanSelection.toLowerCase(), computerSelection);
+
+/*function playRound(humanChoice.toLowerCase(), computerChoice()) {
     if (cres == "scissors") && (human == "paper") {
         console.log("You lose");
     } else if (cres == "scissors") &&  (human == "rock") {
@@ -64,7 +86,8 @@ let computerScore = 0;
     } else if (cres == "rock") &&  (human == "scissors") {
         console.log("You win");
     }
-}*/
+};*/
+
 
 // create computer score and human score variables and increment it with each round
 
