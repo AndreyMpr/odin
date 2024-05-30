@@ -53,19 +53,24 @@ let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
     if ((cres == "scissors") && (human == "paper")) {
-        console.log("You lose");
+        console.log("You lose"), computerScore + 1;
     } else if ((cres == "scissors") &&  (human == "rock")) {
-        console.log("You win");
+        console.log("You win"), humanScore + 1;
     } else if ((cres == "paper") &&  (human == "scissors")) {
-        console.log("You lose");
+        console.log("You lose"), computerScore + 1;
     } else if ((cres == "paper") &&  (human == "rock")) {
-        console.log("You win");
+        console.log("You win", humanScore + 1);
     } else if ((cres == "rock") &&  (human == "paper")) {
-        console.log("You lose");
+        console.log("You lose"), computerScore + 1;
     } else if ((cres == "rock") &&  (human == "scissors")) {
-        console.log("You win");
+        console.log("You win", humanScore + 1);
     }
 }
+
+console.log(humanScore);
+console.log(computerScore);
+
+
 
 //const humanSelection = getHumanChoice();
 //const computerSelection = getComputerChoice();
