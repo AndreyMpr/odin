@@ -68,8 +68,7 @@ function playRound(human, cres) {
 console.log(humanScore);
 console.log(computerScore);
 
-
-playRound(human, cres);
+setTimeout(() => {playRound(human, cres)}, 2500);
 
 
 // create computer score and human score variables and increment it with each round
