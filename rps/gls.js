@@ -49,7 +49,7 @@ setTimeout(() => {getHumanChoice()}, 1500);
 let humanScore = 0;
 let computerScore = 0;
 
-function playRound(humanChoice, computerChoice) {
+function playRound(human, cres) {
     if ((cres == "scissors") && (human == "paper")) {
         console.log("You lose"), computerScore + 1;
     } else if ((cres == "scissors") &&  (human == "rock")) {
