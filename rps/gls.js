@@ -76,23 +76,6 @@ playRound(human, cres);
 
 //playRound(humanSelection.toLowerCase(), computerSelection);
 
-/*function playRound(humanChoice.toLowerCase(), computerChoice()) {
-    if (cres == "scissors") && (human == "paper") {
-        console.log("You lose");
-    } else if (cres == "scissors") &&  (human == "rock") {
-        console.log("You win");
-    } else if (cres == "paper") &&  (human == "scissors") {
-        console.log("You lose");
-    } else if (cres == "paper") &&  (human == "rock") {
-        console.log("You win");
-    } else if (cres == "rock") &&  (human == "paper") {
-        console.log("You lose");
-    } else if (cres == "rock") &&  (human == "scissors") {
-        console.log("You win");
-    }
-};*/
-
-
 // create computer score and human score variables and increment it with each round
 
 // wrap it into a round logic
