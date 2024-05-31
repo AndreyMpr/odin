@@ -71,10 +71,6 @@ console.log(computerScore);
 
 playRound(human, cres);
 
-//const humanSelection = getHumanChoice();
-//const computerSelection = getComputerChoice();
-
-//playRound(humanSelection.toLowerCase(), computerSelection);
 
 // create computer score and human score variables and increment it with each round
 
