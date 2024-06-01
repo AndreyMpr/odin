@@ -43,22 +43,39 @@ let computerScore = 0;
 
 
 function playRound(computerChoice, humanChoice) {
+
     if ((computerChoice == "scissors") && (humanChoice == "paper")) {
         console.log("You lose"), computerScore++;
+
     } else if ((computerChoice == "scissors") &&  (humanChoice == "rock")) {
         console.log("You win"), humanScore++;
+
     } else if ((computerChoice == "paper") &&  (humanChoice == "scissors")) {
-        console.log("You lose"), computerScore++;
+        console.log("You win"), humanScore++;
+
     } else if ((computerChoice == "paper") &&  (humanChoice == "rock")) {
-        console.log("You win", humanScore++);
+        console.log("You lose", computerScore++);
+
     } else if ((computerChoice == "rock") &&  (humanChoice == "paper")) {
-        console.log("You lose"), computerScore++;
+        console.log("You win"), humanScore++;
+
     } else if ((computerChoice == "rock") &&  (humanChoice == "scissors")) {
-        console.log("You win", humanScore++);
+        console.log("You lose", computerScore++);
+
     } else console.log("That's a draw!");
+
 }
 
-playRound(computerChoice, humanChoice.toLowerCase());
+playRound(computerChoice, humanChoice.toLocaleLowerCase());
+
+/*function playGame(humanScore, computerScore) {
+    if (humanScore = 5) {console.log("Congratulations! You won!");
+    } else if (computerScore = 5) {console.log("Oh Well, computer has won.");
+    } else (playRound(computerChoice, humanChoice));
+}
+
+playGame(humanScore, computerScore);
+*/
 
 //Create function playGame, that calles playRound function 5 Times.
 
