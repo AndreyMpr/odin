@@ -44,18 +44,18 @@ let computerScore = 0;
 
 function playRound(computerChoice, humanChoice) {
     if ((computerChoice == "scissors") && (humanChoice == "paper")) {
-        console.log("You lose"), computerScore + 1;
+        console.log("You lose"), computerScore++;
     } else if ((computerChoice == "scissors") &&  (humanChoice == "rock")) {
-        console.log("You win"), humanScore + 1;
+        console.log("You win"), humanScore++;
     } else if ((computerChoice == "paper") &&  (humanChoice == "scissors")) {
-        console.log("You lose"), computerScore + 1;
+        console.log("You lose"), computerScore++;
     } else if ((computerChoice == "paper") &&  (humanChoice == "rock")) {
-        console.log("You win", humanScore + 1);
+        console.log("You win", humanScore++);
     } else if ((computerChoice == "rock") &&  (humanChoice == "paper")) {
-        console.log("You lose"), computerScore + 1;
+        console.log("You lose"), computerScore++;
     } else if ((computerChoice == "rock") &&  (humanChoice == "scissors")) {
-        console.log("You win", humanScore + 1);
-    } else console.log("That's a draw!"), computerScore + 1, humanScore + 1;
+        console.log("You win", humanScore++);
+    } else console.log("That's a draw!");
 }
 
 playRound(computerChoice, humanChoice.toLowerCase());
