@@ -1,78 +1,68 @@
-console.log("Janken");
-
-//Computer choice
+//Create function getComputerChoice, that returns values rock or paper or scissors. Store it in a variable computerChoice.
 
 function getComputerChoice(max){
     return Math.floor(Math.random() * max);
 }
 
 let computer = (getComputerChoice(3));
-let cres;
+let computerChoice;
 
 if (computer === 0) {
-    cres = "scissors";
+    computerChoice = "scissors";
 }
 else if (computer === 1) {
-    cres = "rock";}
+    computerChoice = "rock";}
 
 else {
-    cres = "paper";
+    computerChoice = "paper";
 }
 
-console.log(`Computer chose ${cres}!`);
+console.log(`Computer chose ${computerChoice}!`);
 
-//Human choice
+//Create function getHumanChoice that takes user input with a prompt and returns one of three values: rock or paper or scissors. Store it in a variable humanChoice.
 
-let human;
+let humanChoice = prompt(`Chose something, you know that computer has chosen ${computerChoice}, so it has to be en easy choice.`);
 
 function getHumanChoice(){
-    let human = prompt(`Chose something, you know that computer has chosen ${cres}, so it has to be en easy choice.`);
-    if (human.toLowerCase() == "rock") {
+    if (humanChoice.toLowerCase() == "rock") {
         console.log("So you are going with rock");
-    } else if (human.toLowerCase() == "paper") {
+    } else if (humanChoice.toLowerCase() == "paper") {
         console.log("So you are goind with paper");
-    } else if (human.toLowerCase() == "scissors") {
-        console.log("So you are ging with scissors");
+    } else if (humanChoice.toLowerCase() == "scissors") {
+        console.log("So you are going with scissors");
     } else {
         console.log('Please play along and type in one of the following: "Rock" or "Paper" or "Scissors"');
         setTimeout(() => {getHumanChoice()}, 2000);
     }
 }
 
-let computerChoice = cres;
-let humanChoice = human;
-
-setTimeout(() => {getHumanChoice()}, 1500);
-
-//Score
+//Declare variables for computerScore and humanScore. Set both to 0.
 
 let humanScore = 0;
 let computerScore = 0;
 
-function playRound(human, cres) {
-    if ((cres == "scissors") && (human == "paper")) {
+
+function playRound(computerChoice, humanChoice) {
+    if ((computerChoice == "scissors") && (humanChoice == "paper")) {
         console.log("You lose"), computerScore + 1;
-    } else if ((cres == "scissors") &&  (human == "rock")) {
+    } else if ((computerChoice == "scissors") &&  (humanChoice == "rock")) {
         console.log("You win"), humanScore + 1;
-    } else if ((cres == "paper") &&  (human == "scissors")) {
+    } else if ((computerChoice == "paper") &&  (humanChoice == "scissors")) {
         console.log("You lose"), computerScore + 1;
-    } else if ((cres == "paper") &&  (human == "rock")) {
+    } else if ((computerChoice == "paper") &&  (humanChoice == "rock")) {
         console.log("You win", humanScore + 1);
-    } else if ((cres == "rock") &&  (human == "paper")) {
+    } else if ((computerChoice == "rock") &&  (humanChoice == "paper")) {
         console.log("You lose"), computerScore + 1;
-    } else if ((cres == "rock") &&  (human == "scissors")) {
+    } else if ((computerChoice == "rock") &&  (humanChoice == "scissors")) {
         console.log("You win", humanScore + 1);
     } else console.log("That's a draw!"), computerScore + 1, humanScore + 1;
 }
 
-console.log(humanScore);
-console.log(computerScore);
+playRound(computerChoice, humanChoice.toLowerCase());
 
-setTimeout(() => {playRound(humanScore, computerScore)}, 2500);
+//Create function playGame, that calles playRound function 5 Times.
 
+    //Create function playRound with two parameters: computerChoice and humanChoice.toLowerCase.
+    //Inside the function create logic that compares computerChoice and humanChoice, declares winner, increments his score variable and prints who won to the console.
 
-// create computer score and human score variables and increment it with each round
-
-// wrap it into a round logic
-
-// wrap everything into a game logic
+//When one of scores hits 5, display who won tho the console.
