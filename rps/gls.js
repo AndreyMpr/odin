@@ -65,6 +65,10 @@ function playRound(computerChoice, humanChoice) {
     } else console.log("That's a draw!");
 
 }
+//Create function playGame, that calles playRound function 5 Times.
+
+//Create function playRound with two parameters: computerChoice and humanChoice.toLowerCase.
+    //Inside the function create logic that compares computerChoice and humanChoice, declares winner, increments his score variable and prints who won to the console.
 
 //playRound(computerChoice, humanChoice.toLocaleLowerCase());
 
@@ -75,11 +79,5 @@ function playGame(humanScore, computerScore) {
 }
 
 playGame(humanScore, humanChoice.toLocaleLowerCase());
-
-
-//Create function playGame, that calles playRound function 5 Times.
-
-    //Create function playRound with two parameters: computerChoice and humanChoice.toLowerCase.
-    //Inside the function create logic that compares computerChoice and humanChoice, declares winner, increments his score variable and prints who won to the console.
 
 //When one of scores hits 5, display who won tho the console.
