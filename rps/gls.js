@@ -66,16 +66,16 @@ function playRound(computerChoice, humanChoice) {
 
 }
 
-playRound(computerChoice, humanChoice.toLocaleLowerCase());
+//playRound(computerChoice, humanChoice.toLocaleLowerCase());
 
-/*function playGame(humanScore, computerScore) {
+function playGame(humanScore, computerScore) {
     if (humanScore = 5) {console.log("Congratulations! You won!");
     } else if (computerScore = 5) {console.log("Oh Well, computer has won.");
-    } else (playRound(computerChoice, humanChoice));
+    } else (playRound(computerChoice, humanChoice.toLocaleLowerCase()));
 }
 
 playGame(humanScore, computerScore);
-*/
+
 
 //Create function playGame, that calles playRound function 5 Times.
 
