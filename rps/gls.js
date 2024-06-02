@@ -44,6 +44,9 @@ let computerScore = 0;
 
 function playRound(computerChoice, humanChoice) {
 
+    getComputerChoice(max);
+    getHumanChoice()
+
     if ((computerChoice == "scissors") && (humanChoice == "paper")) {
         console.log("You lose"), computerScore++;
 
