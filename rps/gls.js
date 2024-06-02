@@ -44,7 +44,7 @@ let computerScore = 0;
 
 function playRound(computerChoice, humanChoice) {
 
-    getComputerChoice(max);
+    getComputerChoice();
     getHumanChoice()
 
     if ((computerChoice == "scissors") && (humanChoice == "paper")) {
