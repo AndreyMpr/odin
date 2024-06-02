@@ -81,3 +81,8 @@ function playGame(humanScore, computerScore) {
 playGame(humanScore, humanChoice.toLocaleLowerCase());
 
 //When one of scores hits 5, display who won tho the console.
+
+
+
+
+//Function Play round should run getComputerChoice, then run getHumanChoice and the if else block.
