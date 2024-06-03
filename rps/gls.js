@@ -81,7 +81,7 @@ function playGame(humanScore, computerScore) {
     } else (playRound(computerChoice, humanChoice.toLocaleLowerCase()));
 }
 
-playGame(humanScore, humanChoice.toLocaleLowerCase());
+playGame(humanChoice, humanChoice.toLocaleLowerCase());
 
 //When one of scores hits 5, display who won tho the console.
 
