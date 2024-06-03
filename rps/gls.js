@@ -19,6 +19,8 @@ else {
 
 console.log(`Computer chose ${computerChoice}!`);
 
+computerSelection = getComputerChoice(3);
+
 //Create function getHumanChoice that takes user input with a prompt and returns one of three values: rock or paper or scissors. Store it in a variable humanChoice.
 
 let humanChoice = prompt(`Chose something, you know that computer has chosen ${computerChoice}, so it has to be en easy choice.`);
