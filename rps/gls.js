@@ -1,4 +1,4 @@
-//Create function getComputerChoice, that returns values rock or paper or scissors. Store it in a variable computerChoice.
+//Create function getComputerChoice, that returns values rock or paper or scissors. Store it in a variable computerSelection.
 
 function getComputerChoice(max){
     return Math.floor(Math.random() * max);
@@ -19,9 +19,9 @@ else {
 
 console.log(`Computer chose ${computerChoice}!`);
 
-computerSelection = getComputerChoice(3);
+let computerSelection = getComputerChoice(3);
 
-//Create function getHumanChoice that takes user input with a prompt and returns one of three values: rock or paper or scissors. Store it in a variable humanChoice.
+//Create function getHumanChoice that takes user input with a prompt and returns one of three values: rock or paper or scissors. Store it in a variable humanSelection.
 
 let humanChoice = prompt(`Chose something, you know that computer has chosen ${computerChoice}, so it has to be en easy choice.`);
 
