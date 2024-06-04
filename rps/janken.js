@@ -3,19 +3,19 @@ function getComputerChoice(){
 
     let computerChoice;
 
-if (computer === 0) {
-    computerChoice = "scissors";
-}
-else if (computer === 1) {
-    computerChoice = "rock";}
+    if (computer === 0) {
+        computerChoice = "scissors";
+    }
+    else if (computer === 1) {
+        computerChoice = "rock";}
 
-else {
-    computerChoice = "paper";
-}
+    else {
+        computerChoice = "paper";
+    }
 
-console.log(`Computer chose ${computerChoice}!`);
+    console.log(`Computer chose ${computerChoice}!`);
 
-return computerChoice
+    return computerChoice
 }
 
 getComputerChoice()
