@@ -5,21 +5,21 @@ function getComputerChoice(max){
 }
 
 let computer = (getComputerChoice(3));
-let computerChoice;
+let computerSelection;
 
 if (computer === 0) {
-    computerChoice = "scissors";
+    computerSelection = "scissors";
 }
 else if (computer === 1) {
-    computerChoice = "rock";}
+    computerSelection = "rock";}
 
 else {
-    computerChoice = "paper";
+    computerSelection = "paper";
 }
 
 console.log(`Computer chose ${computerChoice}!`);
 
-let computerSelection = getComputerChoice(3);
+let computerChoice = getComputerChoice(3);
 
 //Create function getHumanChoice that takes user input with a prompt and returns one of three values: rock or paper or scissors. Store it in a variable humanSelection.
 

@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice(){
     let computer = Math.floor(Math.random() * 3);
 
@@ -18,9 +21,11 @@ function getComputerChoice(){
     return computerChoice;
 };
 
+
+
 function getHumanChoice(){
     
-    let humanChoice = prompt(`Chose something, you know that computer has chosen ${computerChoice}, so it has to be en easy choice.`);
+    let humanChoice = prompt(`Chose something, you know that computer has chosen ${computerSelection}, so it has to be en easy choice.`);
 
     if (humanChoice.toLowerCase() == "rock") {
         console.log("So you are going with rock");
@@ -35,3 +40,33 @@ function getHumanChoice(){
     return humanChoice;
 };
 
+let computerSelection = getComputerChoice();
+let humanSelection = getHumanChoice();
+
+function playRound(computerSelection, humanSelection) {
+
+    if ((computerSelection == "scissors") && (humanSelection == "paper")) {
+        console.log("You lose"), computerScore++;
+
+    } else if ((computerSelection == "scissors") &&  (humanSelection == "rock")) {
+        console.log("You win"), humanScore++;
+
+    } else if ((computerSelection == "paper") &&  (humanSelection == "scissors")) {
+        console.log("You win"), humanScore++;
+
+    } else if ((computerSelection == "paper") &&  (humanSelection == "rock")) {
+        console.log("You lose", computerScore++);
+
+    } else if ((computerSelection == "rock") &&  (humanSelection == "paper")) {
+        console.log("You win"), humanScore++;
+
+    } else if ((computerSelection == "rock") &&  (humanSelection == "scissors")) {
+        console.log("You lose", computerScore++);
+
+    } else console.log("That's a draw!");
+
+    
+
+}
+
+playRound();
