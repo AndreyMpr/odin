@@ -36,6 +36,7 @@ function getHumanChoice(){
         console.log('Please play along and type in one of the following: "Rock" or "Paper" or "Scissors"');
         setTimeout(() => {getHumanChoice()}, 2000);
     }
+    
 }
 
 //Declare variables for computerScore and humanScore. Set both to 0.
