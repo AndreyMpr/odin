@@ -1,5 +1,4 @@
-let humanScore = 0;
-let computerScore = 0;
+
 
 function getComputerChoice(){
     let computer = Math.floor(Math.random() * 3);
@@ -43,7 +42,12 @@ function getHumanChoice(){
 let computerSelection = getComputerChoice();
 let humanSelection = getHumanChoice();
 
+let humanScore = 0;
+let computerScore = 0;
+
 function playRound(computerSelection, humanSelection) {
+
+
 
     if ((computerSelection == "scissors") && (humanSelection == "paper")) {
         console.log("You lose"), computerScore++;
