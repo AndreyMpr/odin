@@ -51,8 +51,6 @@ function playGame() {
 
     function playRound() {
 
-
-
         if ((computerSelection == "scissors") && (humanSelection == "paper")) {
             console.log("You lose"), computerScore++;
 
@@ -71,9 +69,7 @@ function playGame() {
         } else if ((computerSelection == "rock") &&  (humanSelection == "scissors")) {
             console.log("You lose", computerScore++);
 
-        } else console.log("That's a draw!");
-
-        
+        } else {console.log("That's a draw!")};
 
     }
 
@@ -81,6 +77,4 @@ function playGame() {
 
     return humanScore, computerScore;
 
-}
-
-playGame();
+};
