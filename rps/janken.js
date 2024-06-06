@@ -45,7 +45,9 @@ let humanSelection = getHumanChoice();
 let humanScore = 0;
 let computerScore = 0;
 
-function playRound(computerSelection, humanSelection) {
+
+
+function playRound() {
 
 
 
