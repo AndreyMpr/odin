@@ -51,6 +51,9 @@ function playGame() {
 
     function playRound() {
 
+        getComputerChoice();
+        getHumanChoice();
+
         if ((computerSelection == "scissors") && (humanSelection == "paper")) {
             console.log("You lose"), computerScore++;
 
@@ -74,7 +77,13 @@ function playGame() {
     }
 
     playRound();
+    playRound();
+    playRound();
+    playRound();
+    playRound();
 
     return humanScore, computerScore;
 
 };
+
+playGame();
