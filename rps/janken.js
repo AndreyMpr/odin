@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 function playGame() {
 
     let humanScore = 0;
@@ -90,6 +80,7 @@ function playGame() {
 
     return humanScore, computerScore;
 
+
 };
 
-playGame();
+console.log(playGame());
