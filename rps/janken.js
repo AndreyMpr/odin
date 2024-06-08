@@ -3,11 +3,11 @@ function playGame() {
     let humanScore = 0;
     let computerScore = 0;
 
-console.log("l1");
+console.log("q1");
 
     function playRound() {
 
-        console.log("l2");
+        console.log("q2");
 
         function getComputerChoice(){
             let computer = Math.floor(Math.random() * 3);
@@ -25,12 +25,12 @@ console.log("l1");
             }
         
             console.log(`Computer chose ${computerChoice}!`);
-            console.log("l3");
+            console.log("q3");
             return computerChoice;
         };
 
         function getHumanChoice(){
-            console.log("l4");
+            console.log("q4");
     
             let humanChoice = prompt(`Chose something, you know that computer has chosen ${computerSelection}, so it has to be en easy choice.`);
         
@@ -44,22 +44,22 @@ console.log("l1");
                 console.log('Please play along and type in one of the following: "Rock" or "Paper" or "Scissors"');
                 setTimeout(() => {getHumanChoice()}, 2000);
             }
-            console.log("l5");
+            console.log("q5");
             return humanChoice;
             
         };
 
-        console.log("l6");
+        console.log("q6");
 
         let computerSelection = getComputerChoice();
         let humanSelection = getHumanChoice();
 
-        console.log("l7");
+        console.log("q7");
 
         getComputerChoice();
         getHumanChoice();
 
-        console.log("l8");
+        console.log("q8");
 
         if ((computerSelection == "scissors") && (humanSelection == "paper")) {
             console.log("You lose"), computerScore++;
@@ -81,11 +81,11 @@ console.log("l1");
 
         } else {console.log("That's a draw!")};
 
-        console.log("l9");
+        console.log("q9");
 
     }
 
-    console.log("l10");
+    console.log("q10");
 
     playRound();
     playRound();
@@ -93,14 +93,14 @@ console.log("l1");
     playRound();
     playRound();
 
-    console.log("l11");
+    console.log("q11");
 
     return humanScore, computerScore;
     
 
 
 };
-console.log("l12");
+console.log("q12");
 
 console.log(playGame());
-console.log("l3");
+console.log("q13");
