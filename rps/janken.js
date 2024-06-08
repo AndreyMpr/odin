@@ -56,8 +56,8 @@ console.log("q1");
 
         console.log("q7");
 
-        getComputerChoice();
-        getHumanChoice();
+        //getComputerChoice();
+        //getHumanChoice();
 
         console.log("q8");
 
