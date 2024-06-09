@@ -94,6 +94,9 @@ console.log("q1");
     playRound();
 
     console.log("q11");
+    console.log(humanScore);
+    console.log(computerScore);
+
 
     return humanScore, computerScore;
     
