@@ -56,9 +56,7 @@ console.log("q1");
 
         console.log("q7");
 
-        //getComputerChoice();
-        //getHumanChoice();
-
+    
         console.log("q8");
 
         if ((computerSelection == "scissors") && (humanSelection == "paper")) {
@@ -103,7 +101,6 @@ console.log("q1");
 
 
 };
-console.log("q12");
+
 
 console.log(playGame());
-console.log("q13");
