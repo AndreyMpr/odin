@@ -1,7 +1,9 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function playGame() {
 
-    let humanScore = 0;
-    let computerScore = 0;
+
 
 console.log("q1");
 
