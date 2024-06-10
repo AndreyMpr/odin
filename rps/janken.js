@@ -81,7 +81,7 @@ console.log("q1");
 
         console.log("q9");
 
-    }
+    };
 
     console.log("q10");
 
@@ -100,7 +100,11 @@ console.log("q1");
     
 
 
+
 };
 
+if (humanScore = computerScore) {
+    console.log("The game has ended with a draw.");
+};
 
 console.log(playGame());
