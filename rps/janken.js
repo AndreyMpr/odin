@@ -101,12 +101,14 @@ console.log("q1");
     return humanScore, computerScore;
     
 
-
-
 };
 
 if (humanScore = computerScore) {
     console.log("The game has ended with a draw.");
-};
+} else if (humanScore < computerScore) {
+    console.log("Human lost");
+} else console.log("Computer won");
+
+
 
 console.log(playGame());
