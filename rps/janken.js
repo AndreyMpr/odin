@@ -56,8 +56,6 @@ console.log("q1");
 
         console.log("q7");
 
-    
-        console.log("q8");
 
         if ((computerSelection == "scissors") && (humanSelection == "paper")) {
             console.log("You lose"), computerScore++;
@@ -95,12 +93,18 @@ console.log("q1");
     console.log(humanScore);
     console.log(computerScore);
 
+    if (humanScore < computerScore) {
+        console.log("You lose");
+    } else if (humanScore > computerScore) {
+        console.log("You win");
+    } else {console.log("That's a draw")};
 
     return humanScore, computerScore;
     
-
+    
 
 };
 
 
 console.log(playGame());
+
