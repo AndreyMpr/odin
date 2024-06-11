@@ -3,11 +3,7 @@ function playGame() {
     let humanScore = 0;
     let computerScore = 0;
 
-console.log("q1");
-
     function playRound() {
-
-        console.log("q2");
 
         function getComputerChoice(){
             let computer = Math.floor(Math.random() * 3);
@@ -25,12 +21,10 @@ console.log("q1");
             }
         
             console.log(`Computer chose ${computerChoice}!`);
-            console.log("q3");
             return computerChoice;
         };
 
         function getHumanChoice(){
-            console.log("q4");
     
             let humanChoice = prompt(`Chose something, you know that computer has chosen ${computerSelection}, so it has to be en easy choice.`);
         
@@ -44,17 +38,12 @@ console.log("q1");
                 console.log('Please play along and type in one of the following: "Rock" or "Paper" or "Scissors"');
                 setTimeout(() => {getHumanChoice()}, 2000);
             }
-            console.log("q5");
             return humanChoice;
             
         };
 
-        console.log("q6");
-
         let computerSelection = getComputerChoice();
         let humanSelection = getHumanChoice();
-
-        console.log("q7");
 
 
         if ((computerSelection == "scissors") && (humanSelection == "paper")) {
@@ -77,19 +66,14 @@ console.log("q1");
 
         } else {console.log("That's a draw!")};
 
-        console.log("q9");
-
     }
 
-    console.log("q10");
-
     playRound();
     playRound();
     playRound();
     playRound();
     playRound();
 
-    console.log("q11");
     console.log(humanScore);
     console.log(computerScore);
 
