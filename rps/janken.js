@@ -83,8 +83,8 @@ function playGame() {
         console.log("You win this game");
     } else {console.log("That's a draw for this game")};
 
-    return humanScore, computerScore;
+    //return humanScore, computerScore;
     
 };
 
-console.log(playGame());
+playGame();
