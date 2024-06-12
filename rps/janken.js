@@ -3,11 +3,9 @@ let computerScore = 0;
 
 function playGame() {
 
-
-
     function playRound() {
 
-        function getComputerChoice(){
+        function getComputerChoice() {
             let computer = Math.floor(Math.random() * 3);
         
             let computerChoice;
@@ -26,7 +24,7 @@ function playGame() {
             return computerChoice;
         };
 
-        function getHumanChoice(){
+        function getHumanChoice() {
     
             let humanChoice = prompt(`Chose something, you know that computer has chosen ${computerSelection}, so it has to be en easy choice.`);
         
@@ -80,16 +78,13 @@ function playGame() {
     //console.log(computerScore);
 
     if (humanScore < computerScore) {
-        console.log("You lose");
+        console.log("You lose this game");
     } else if (humanScore > computerScore) {
-        console.log("You win");
-    } else {console.log("That's a draw")};
+        console.log("You win this game");
+    } else {console.log("That's a draw for this game")};
 
     return humanScore, computerScore;
     
-    
-
 };
-
 
 console.log(playGame());
