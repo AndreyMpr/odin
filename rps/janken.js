@@ -84,6 +84,9 @@ function playGame() {
     } else {console.log("That's a draw for this game")};
 
     //return humanScore, computerScore;
+
+    for (let i = 0; i < 5; i++)
+
     
 };
 
