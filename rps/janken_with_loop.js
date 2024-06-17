@@ -39,6 +39,9 @@ function playGame() {
 
     let humanScore = 0;
     let computerScore = 0;
+    
+    let computerSelection = getComputerChoice();
+    let humanSelection = getHumanChoice();
 
     for (let i = 0; i < 5; i++) {
 
