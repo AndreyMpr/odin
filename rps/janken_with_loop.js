@@ -35,40 +35,37 @@ function getHumanChoice() {
     
 };
 
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(){
+
+    if ((computerSelection == "scissors") && (humanSelection == "paper")) {
+        console.log("You lose"), computerScore++;
+    
+    } else if ((computerSelection == "scissors") &&  (humanSelection == "rock")) {
+        console.log("You win"), humanScore++;
+    
+    } else if ((computerSelection == "paper") &&  (humanSelection == "scissors")) {
+        console.log("You win"), humanScore++;
+    
+    } else if ((computerSelection == "paper") &&  (humanSelection == "rock")) {
+        console.log("You lose", computerScore++);
+    
+    } else if ((computerSelection == "rock") &&  (humanSelection == "paper")) {
+        console.log("You win"), humanScore++;
+    
+    } else if ((computerSelection == "rock") &&  (humanSelection == "scissors")) {
+        console.log("You lose", computerScore++);
+    
+    } else {console.log("That's a draw!")};       
+    
+}
+
+
 function playGame() {
 
-    let humanScore = 0;
-    let computerScore = 0;
 
-    let computerSelection = getComputerChoice();
-    let humanSelection = getHumanChoice();
-
-    for (let i = 0; i < 5; i++) {
-
-        function playRound(){
-
-        if ((computerSelection == "scissors") && (humanSelection == "paper")) {
-            console.log("You lose"), computerScore++;
-
-        } else if ((computerSelection == "scissors") &&  (humanSelection == "rock")) {
-            console.log("You win"), humanScore++;
-
-        } else if ((computerSelection == "paper") &&  (humanSelection == "scissors")) {
-            console.log("You win"), humanScore++;
-
-        } else if ((computerSelection == "paper") &&  (humanSelection == "rock")) {
-            console.log("You lose", computerScore++);
-
-        } else if ((computerSelection == "rock") &&  (humanSelection == "paper")) {
-            console.log("You win"), humanScore++;
-
-        } else if ((computerSelection == "rock") &&  (humanSelection == "scissors")) {
-            console.log("You lose", computerScore++);
-
-        } else {console.log("That's a draw!")};
-            
-        }
-        
     }
 
 
