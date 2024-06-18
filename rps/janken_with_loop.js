@@ -66,10 +66,14 @@ function playRound(){
 function playGame() {
 
 
-
-    for (let i = 0; i < 5; i++) {
-        playRound();
     }
+
+
+    if (humanScore < computerScore) {
+        console.log("You lose this game");
+    } else if (humanScore > computerScore) {
+        console.log("You win this game");
+    } else {console.log("That's a draw for this game")};
 
     
 };
